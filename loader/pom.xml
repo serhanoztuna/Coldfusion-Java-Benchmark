@@ -183,11 +183,11 @@
                 <configuration>
                   <target>
                     <!-- get dependencies -->
-                    <dependencyfilesets prefix="mydeps." />
+                    <dependencyfilesets prefix="mydeps."/>
                     <path id="maven-ant-tasks.classpath">
-                      <fileset refid="mydeps.org.apache.maven:maven-ant-tasks:jar" />
+                      <fileset refid="mydeps.org.apache.maven:maven-ant-tasks:jar"/>
                     </path>
-                    <pathconvert property="dependencies" refid="mydeps.maven.project.dependencies" />
+                    <pathconvert property="dependencies" refid="mydeps.maven.project.dependencies"/>
 
                     <path id="nashorn.classpath">
                       <pathelement path="../ant/lib/nashorn-core-15.4.jar"/>
@@ -202,21 +202,21 @@
                       <javaversion atleast="15"/>
                     </condition>
 
-                    <property name="version" value="${project.version}" />
+                    <property name="version" value="${project.version}"/>
 
                     <!-- <property name="compile_classpath" refid="maven.compile.classpath" /> -->
-                    <property name="runtime_classpath" refid="maven.runtime.classpath" />
+                    <property name="runtime_classpath" refid="maven.runtime.classpath"/>
 
-                    <property name="outputDir" value="${project.build.outputDirectory}" />
-                    <property name="testcases" value="true" />
+                    <property name="outputDir" value="${project.build.outputDirectory}"/>
+                    <property name="testcases" value="true"/>
                     <property name="compileTestBox" value="true"/><!-- needed for cfml build archives-->
                     <property name="buildLoaderJar" value="true"/>                    
 
                     <!-- <property name="sourceDir" value="${project.build.sourceDirectory}" /> -->
-                    <property name="baseDir" value="${basedir}" />
-                    <dirname file="${baseDir}" property="rootDir" />
+                    <property name="baseDir" value="${basedir}"/>
+                    <dirname file="${baseDir}" property="rootDir"/>
 
-                    <ant antfile="../ant/build-core.xml" target="buildLoaderMaven" />
+                    <ant antfile="../ant/build-core.xml" target="buildLoaderMaven"/>
 
                   </target>
                 </configuration>
@@ -282,7 +282,7 @@
                       </goals>
                     </pluginExecutionFilter>
                     <action>
-                      <ignore></ignore>
+                      <ignore/>
                     </action>
                   </pluginExecution>
                 </pluginExecutions>
@@ -387,7 +387,7 @@
   <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
-    <version>2.11.0</version>
+    <version>2.14.0</version>
   </dependency>
   <dependency>
     <groupId>org.apache.commons</groupId>
